@@ -1,0 +1,616 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.all-content{
+  background: #f7f5f2;
+}
+html::-webkit-scrollbar-track{
+  background: transparent;
+}
+
+html::-webkit-scrollbar-thumb{
+  background: rgb(12, 8, 9);
+  border-radius: 10px;
+}
+html::-webkit-scrollbar{
+  width: 10px;
+}
+/* navbar */
+#navbar{
+  background-color: palevioletred;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+}
+#logo img{
+  border-radius: 10px;
+  width: 150px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+.navbar-nav{
+  margin-left: 50px;
+}
+.nav-link.active {
+  color: #ffffff; 
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.nav-item .nav-link{
+  color: black;
+  margin-left: 10px;
+  font-weight: bold;
+  transition: 0.5s;
+}
+.nav-item .nav-link:hover{
+  background: #f7f5f2;
+  border-radius: 5px;
+  color: black;
+}
+#navbar form button{
+  background: black;
+  color: rgb(255, 250, 250);
+  border: 1px solid rgb(10, 10, 10);
+}
+/* navbar */
+/* home content */
+#home{
+    width: 100%;
+    height: 90vh;
+    background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url("assets\b.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 80%;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.content{
+  padding-top: 210px;
+  margin-left: 56px;
+}
+.content h3{
+  font-size: 50px;
+  color: white;
+}
+.content p{
+  margin-top: 10px;
+  color: white;
+}
+#btn{
+  width: 150px;
+  height: 36px;
+  margin-top: 20px;
+  background: white;
+  border-radius: 5px;
+  font-weight: bold;
+  border: none;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+#btn:hover{
+  background:pink;
+  color: white;
+}
+/* home content */
+/* about */
+
+#about {
+  background: #f7f5f2;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  width: 100%;
+  min-height: 90vh; 
+}
+/* gallery */
+#gallary{
+  width: 100%;
+  height: 90vh;
+}
+#gallery h1{
+  text-align: center;
+  color: black;
+  margin-top: 60px;
+  font-weight: bold;
+}
+#gallery h1 span{
+  color: palevioletred;
+}
+#gallery .card{
+  border-radius: 10px;
+}
+#gallery .card img{
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+
+
+/* Home Section */
+/* Home Section */
+#home {
+  position: relative;
+  height: 100vh; /* Full height of the viewport */
+  width: 100%;
+  overflow: hidden;
+}
+
+/* Full-screen background for each carousel item */
+#home .carousel-item {
+  height: 100vh; /* Ensures each carousel item takes full height */
+}
+
+#home .carousel-item img {
+  object-fit: cover; /* Ensures images cover the entire area */
+  width: 100%;
+  height: 100%;
+}
+
+/* Tagline on the Left Side */
+.tagline-left {
+  position: absolute;
+  top: 50%;
+  left: 0;  /* Position the tagline at the left */
+  transform: translateY(-50%);
+  color: white;
+  text-align: left;
+  z-index: 2; /* Ensures the text stays on top of the images */
+  font-family: 'Georgia', 'Times New Roman', Times, serif;
+  padding-left: 30px;  /* Add some space from the left side */
+}
+
+.tagline-left h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); /* Adds a shadow for better visibility */
+  margin-bottom: 15px;
+}
+
+.tagline-left p {
+  font-size: 1.25rem;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+/* Make the tagline text responsive */
+@media (max-width: 768px) {
+  .tagline-left h2 {
+    font-size: 2rem; /* Smaller font size on smaller screens */
+  }
+
+  .tagline-left p {
+    font-size: 1rem; /* Smaller font size for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .tagline-left h2 {
+    font-size: 1.5rem;
+  }
+
+  .tagline-left p {
+    font-size: 0.9rem;
+  }
+}
+
+/* Auto slide configuration for carousel */
+#home .carousel {
+  animation: slideAnimation 10s infinite;  /* Auto-slide every 10 seconds */
+}
+
+@keyframes slideAnimation {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-100%); }
+  50% { transform: translateX(-200%); }
+  75% { transform: translateX(-300%); }
+  100% { transform: translateX(0); }
+}
+
+
+/* gallery */
+#about .container{
+  padding-top: 70px;
+}
+.heading{
+  text-align: center;
+  margin-bottom: 50px;
+  color: black;
+  font-size: 30px;
+  font-weight: bold;
+}
+.heading span{
+  color: palevioletred;
+}
+#about .card{
+  border-radius: 10px;
+}
+#about .card img{
+  border-radius: 10px;
+}
+#about-btn{
+  width: 200px;
+  height: 36px;
+  background: transparent;
+  border: 2px solid palevioletred;
+  color: palevioletred;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: 0.5s;
+  cursor: pointer;
+}
+#about-btn:hover{
+  background: palevioletred;
+  color: white;
+}
+@media screen and (max-width:982px){
+  #about p{
+    font-size: 8px;
+  }
+}
+@media screen and (max-width:766px){
+  #about p{
+    font-size: 15px;
+  }
+  #about{
+    height: 120vh;
+  }
+}
+
+/* Gallery image zoom effect */
+#gallery .card img {
+  transition: transform 0.3s ease-in-out;  /* Smooth zoom transition */
+}
+
+#gallery .card:hover img {
+  transform: scale(1.1);  /* Zoom the image on hover */
+}
+
+#gallery .card {
+  position: relative;
+  overflow: hidden;  /* Hide the zoomed-in portion */
+}
+
+#gallery .card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* about */
+/* menu */
+.menu{
+  width: 100%;
+  background: #f7f5f2;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.heading3{
+  text-align: center;
+  font-size: 30px;
+  color: palevioletred;
+  font-weight: bold;
+  border-bottom: 2px solid palevioletred;
+}
+#container2{
+  margin-top: 20px;
+}
+.menu .card{
+  background: white;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.star i{
+  color: palevioletred;
+}
+.menu h3{
+  color: palevioletred;
+  text-align: center;
+  margin-top: 10px;
+  font-size: 25px;
+}
+.menu p{
+  font-size: 16px;
+  color: palevioletred;
+  padding-top: 10px;
+}
+.menu p span{
+  float: right;
+  cursor: pointer;
+}
+/* menu */
+
+/* contact */
+.contact {
+  width: 100%;
+  min-height: 100vh;
+  background: #f7efe4;
+  padding-top: 70px;
+}
+.contact .container{
+  width: 100%;
+  height: 100vh;
+  background: white;
+  background: linear-gradient(90deg, white 80%, palevioletred 20%);
+  border-radius: 10px;
+}
+.heading6{
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 70px;
+}
+.heading6 span{
+  color: rgb(31, 28, 29);
+}
+.contact p{
+  font-weight: bold;
+  font-size: 13px;
+  color: rgb(8, 8, 8);
+}
+.contact input{
+  width: 360px;
+  border: none;
+  border-bottom: 1px solid;
+}
+#contact-btn{
+  width: 200px;
+  height: 36px; 
+  border: none;
+  background: palevioletred;
+  color: rgb(20, 20, 20);
+  font-weight: bold;
+  margin-top: 30px;
+  cursor: pointer;
+}
+#col{
+  width: 40%;
+  height: 56vh;
+  background: rgb(236, 228, 228);
+  margin-top: 78px;
+}
+.contact h1{
+  color: rgb(17, 15, 15);
+  font-size: 25px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+.contact #col p{
+  font-size: 15px;
+  color: rgb(8, 8, 8);
+  margin-left: 13px;
+  padding-top: 30px;
+}
+@media screen and (max-width:766px){
+  .contact .container{
+  background: white;
+  }
+  #col{
+    width: 100%;
+    background: palevioletred;
+  }
+  .contact{
+    height: 150vh;
+  }
+}
+@media screen and (max-width:400px){
+  .contact input{
+    width: 250px;
+  }
+}
+/* contact */
+
+/* footer */
+#footer{
+  width: 100%;
+  background: palevioletred;
+  margin-top: 50px;
+}
+.footer-logo img{
+  width: 180px;
+  border-radius: 10px;
+  margin-top: 30px;
+  cursor: pointer;
+}
+#footer .socail-links i{
+  font-size: 30px;
+  margin-left: 10px;
+  margin-right: 15px;
+  margin-top: 30px;
+  padding: 10px;
+  background: black;
+  color: white;
+  border-radius: 50px;
+  cursor: pointer;
+}
+.credite{
+  color: white;
+  margin-top: 20px;
+}
+.credite{
+  text-shadow: 0px 0px 1px black;
+}
+.credite a{
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+.credite a span{
+  color: black;
+}
+.copyright span{
+  color: black;
+}
+/* footer */
+html{
+  scroll-behavior: smooth;
+}
+.arrow{
+  position: fixed;
+  border-radius: 50px;
+  height: 50px;
+  bottom: 40px;
+  right: 50px;
+  text-decoration: none;
+  text-align: center;
+  line-height: 50px;
+}
+/* social icons appear on the top right of the navbar */
+.social-links-right {
+  position:absolute;
+  right: 80px;  
+  top: 20px;   
+  display: flex;
+  align-items: center;
+  gap: 60px;  
+  margin-left: 50px; 
+  margin-right: 50px;
+  margin-top: 50px; 
+  font-size: 50px;
+  color: black;
+}
+
+
+/* Container for services with Flexbox layout */
+#container2 .row {
+  display: flex; /* Align all the cards in a horizontal line */
+  justify-content: space-between; /* Ensure equal space between the cards */
+  align-items: stretch; /* Make sure all cards have the same height */
+}
+
+/* Make sure each card takes equal width */
+.card {
+  flex: 1; /* This ensures each card takes up the same width */
+  margin: 10px; /* Adds space between cards */
+  display: flex;
+  flex-direction: column; /* Ensures content inside the card is aligned vertically */
+}
+
+/* Ensures images inside cards don't stretch */
+.card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover; /* Keeps the aspect ratio intact */
+}
+
+/* Optional: Hover effect for cards */
+.card:hover {
+  transform: translateY(-10px); /* Slight lift effect on hover */
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Adjust the card body */
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Aligns text and content properly */
+  text-align: center;
+  padding: 15px;
+}
+
+/* Ensure equal height for the cards */
+.card-body h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.card-body p {
+  flex-grow: 1; /* Ensures the paragraph grows to fill the remaining space */
+  font-size: 14px;
+  color: #555;
+}
+
+@media (max-width: 768px) {
+  /* On smaller screens (e.g., mobile), stack the cards vertically */
+  #container2 .row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    margin: 10px 0; /* Adjust margins for mobile view */
+    width: 100%; /* Make cards take full width on mobile */
+  }
+}
+
+
+
+
+/* Apply the font style, make the text white, and add a subtle glowing light pink effect */
+.carousel-caption h2, .carousel-caption p {
+  font-family: 'Allura', cursive; /* Or use 'Sacramento', 'Dancing Script' */
+  font-style: normal;
+  color: white; /* Set the text color to white */
+  text-shadow: 0 0 5px #f8c8d7, 0 0 10px #f8c8d7; /* Subtle light pink glowing effect */
+}
+
+
+
+.socail-links a {
+  text-decoration: none; /* Remove underline */
+}
+
+.socail-links i {
+  font-size: 40px; /* Larger size for visibility */
+  color: #333; /* Default color, can be changed per icon */
+  transition: all 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.socail-links i:hover {
+  transform: scale(1.1); /* Slightly enlarge on hover */
+  color: #ff4081; /* Change color on hover (optional) */
+}
+
+
+
+
+/* hi */
+/* Styling for the Contact Us Section */
+.contact .container {
+  padding-top: 30px;
+}
+
+/* Heading for the contact form */
+.heading6 {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Styling for the form */
+#contactForm {
+  max-width: 400px;  /* Limits form width */
+  margin-left: 20px; /* Adds slight left alignment */
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for form inputs and textarea */
+#contactForm input,
+#contactForm textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* Style for the submit button */
+#contactForm button {
+  width: 100%;
+  padding: 12px;
+  background-color: #f573b4; /* WhatsApp green */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#contactForm button:hover {
+  background-color: #f573b4; /* Darker green when hovered */
+}
+
+
+
+
+
+
