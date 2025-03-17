@@ -68,8 +68,9 @@ html::-webkit-scrollbar{
   align-items: center;
   gap: 10px;
   position:absolute;
-  top:20px;
-  right:70px; /* Spacing between icons */
+  top:10px;
+  right:70px; 
+  font-size: 30px;
 }
 
 .social-links-right a {
